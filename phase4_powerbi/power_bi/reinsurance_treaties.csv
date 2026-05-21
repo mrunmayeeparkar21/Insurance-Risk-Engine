@@ -1,0 +1,4 @@
+treaty_id,treaty_type,attachment_point,limit_amount,cession_rate,ri_premium,effective_date,expiry_date
+TRT-001,XL_Per_Risk,500000.0,4500000.0,,8000000.0,2023-01-01,2023-12-31
+TRT-002,Quota_Share,,,0.2,6000000.0,2023-01-01,2023-12-31
+TRT-003,Stop_Loss,70000000.0,20000000.0,,1500000.0,2023-01-01,2023-12-31
