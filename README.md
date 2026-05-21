@@ -212,8 +212,8 @@ insurance-risk-engine/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOURUSERNAME/insurance-risk-engine.git
-cd insurance-risk-engine
+git clone https://github.com/mrunmayeeparkar21/Insurance-Risk-Engine.git
+cd Insurance-Risk-Engine
 
 # 2. Create and activate a virtual environment (recommended)
 python -m venv actuarial_env
