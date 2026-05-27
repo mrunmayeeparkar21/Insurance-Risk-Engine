@@ -62,7 +62,7 @@ ORDER BY mean_severity_rs DESC;
 -- Note:
 -- Claims represent full-year simulated losses.
 -- Therefore annual premium is used as denominator for consistency with the synthetic portfolio design assumptions.
--- In a real actuarial setting, earned premium would be the standard denominator for loss ratio analysis.
+-- In a real actuarial setting, earned premium would be the correct denominator. Using annual premium here materially understates loss ratio because average exposure is approximately 58.6% of a full policy year.
 
 SELECT
     p.product_type,

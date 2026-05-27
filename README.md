@@ -267,9 +267,12 @@ The following are known simplifications that would be addressed in a production 
 - Only **lognormal severity** was fitted; alternatives (Pareto, Burr, Weibull) were not tested
 - The **XL reinsurance model** covers the per-risk treaty only; quota share and stop-loss treaties are excluded from stochastic modelling
 - **IBNR estimates** are point estimates without confidence intervals
+- Chain-ladder IBNR is sensitive to the assumed 1.02 tail factor, particularly for immature underwriting years (e.g. 2023), where projected development materially
+  exceeds observed emergence.
 - **No multi-year projection** or claims inflation loading
 - The **chain-ladder tail factor** (1.02) is a simplifying assumption, not benchmarked to external data
 - **Ruin probability** is defined as technical insolvency (aggregate losses exceeding net premium resources plus available capital), rather than simple underwriting loss probability
+
 
 ---
 

@@ -93,7 +93,10 @@ Solvency Ratio = Available Capital / TCR = ₹2.00 Cr / ₹0.84 Cr = 2.39×
 At mean severity ₹1,20,000, the XL treaty attachment point (₹5,00,000) is never
 triggered under base case assumptions. The XL treaty provides **no protection** for
 attritional claims — it is designed for large individual losses. This is explicitly
-flagged on the Calculations sheet.
+flagged on the Calculations sheet. 
+Capital Cost assumes a simplified 10% charge on available capital held
+against underwriting risk (₹2 Cr × 10% = ₹20 lakh). This is an illustrative
+management pricing load, not a regulatory cost-of-capital calibration.
 
 ---
 
