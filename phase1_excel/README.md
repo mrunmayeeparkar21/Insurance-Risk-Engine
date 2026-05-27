@@ -39,7 +39,7 @@ metrics before progressing to the full stochastic Python engine in Phase 2.
 | Net Underwriting Profit  | ₹20 lakh    | > 0        | ✓ Profitable       |
 | VaR 99.5% (simulation)   | ₹6.71 Cr    | —          | Solvency II basis  |
 | SCR                      | ₹71 lakh    | —          | Unexpected loss    |
-| Solvency Ratio           | 2.35×       | ≥ 1.0×     | ✓ Solvent          |
+| Solvency Ratio           | 2.39×       | ≥ 1.0×     | ✓ Solvent          |
 | Pricing Adequacy Ratio   | 0.982×      | ≥ 1.0×     | ✗ Under-priced     |
 | Required Rate Increase   | ~1.8%       | 0%         | Action needed       |
 
@@ -80,7 +80,7 @@ Current premium (₹1,00,00,000) falls short by ₹1,80,000 → ~1.8% rate incre
 ```
 SCR  = VaR(99.5%) − E[Loss]  =  ₹6.71 Cr − ₹6.00 Cr  =  ₹71 lakh
 TCR  = SCR × (1 + 20% buffer)                           =  ₹85 lakh
-Solvency Ratio = Available Capital / TCR = ₹2.00 Cr / ₹0.85 Cr = 2.35×
+Solvency Ratio = Available Capital / TCR = ₹2.00 Cr / ₹0.84 Cr = 2.39×
 ```
 
 ### Key Risk Drivers (Sensitivity / Tornado)
