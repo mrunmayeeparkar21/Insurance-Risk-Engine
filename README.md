@@ -194,7 +194,8 @@ insurance-risk-engine/
 │   │   ├── extract_parameters.py
 │   │   └── queries.sql
 │   ├── tests/
-│   │   └── test_database.py
+|   |   ├── test_database.py
+│   │   └── test_model.py
 │   └── README.md
 │
 ├── phase4_powerbi/

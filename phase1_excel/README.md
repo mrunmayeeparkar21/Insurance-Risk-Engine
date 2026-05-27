@@ -40,8 +40,8 @@ metrics before progressing to the full stochastic Python engine in Phase 2.
 | VaR 99.5% (simulation)   | ₹6.71 Cr    | —          | Solvency II basis  |
 | SCR                      | ₹71 lakh    | —          | Unexpected loss    |
 | Solvency Ratio           | 2.35×       | ≥ 1.0×     | ✓ Solvent          |
-| Pricing Adequacy Ratio   | 0.954×      | ≥ 1.0×     | ✗ Under-priced     |
-| Required Rate Increase   | ~4.8%       | 0%         | Action needed       |
+| Pricing Adequacy Ratio   | 0.982×      | ≥ 1.0×     | ✗ Under-priced     |
+| Required Rate Increase   | ~1.8%       | 0%         | Action needed       |
 
 ---
 
@@ -71,10 +71,10 @@ Simulated Loss = Claim Count × ₹1,20,000 (deterministic severity)
 Required premium built up from first principles:
 ```
 Required Premium = Pure Loss Cost + Expenses + RI Cost + Risk Margin + Capital Cost
-                 = ₹6.00 Cr + ₹3.00 Cr + ₹0.80 Cr + ₹0.18 Cr + ₹0.50 Cr
-                 = ₹1,04,80,000
+                 = ₹6.00 Cr + ₹3.00 Cr + ₹0.80 Cr + ₹0.18 Cr + ₹0.20 Cr
+                 = ₹1,01,80,000
 ```
-Current premium (₹1,00,00,000) falls short by ₹4,80,000 → ~4.8% rate increase needed.
+Current premium (₹1,00,00,000) falls short by ₹1,80,000 → ~1.8% rate increase needed.
 
 ### Capital Framework
 ```
