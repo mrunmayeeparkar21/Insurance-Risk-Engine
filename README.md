@@ -59,15 +59,16 @@ difference between Excel and Python capital metrics.
 
 ### Stochastic Risk Metrics (Python, 100,000 Simulations, MLE Parameters)
 
-| Metric                        | Value       | Notes                          |
-|-------------------------------|-------------|--------------------------------|
-| Mean Loss (Gross)             | ₹5.98 Cr    | MLE-calibrated lognormal       |
-| VaR 95%                       | ₹6.81 Cr    | 1-in-20 year loss              |
-| VaR 99%                       | ₹7.19 Cr    | 1-in-100 year loss             |
-| VaR 99.5% (Solvency II basis) | ₹7.34 Cr    | 1-in-200 year loss             |
-| Expected Shortfall 99%        | ₹7.41 Cr    | Mean of tail beyond VaR 99%    |
-| Net VaR 99% (post XL)         | ₹6.32 Cr    | After XL reinsurance recovery  |
-| Net VaR 99.5% (post XL)       | ₹6.43 Cr    | After XL reinsurance recovery  |
+| Metric                           | Value       | Notes                           |
+|----------------------------------|-------------|---------------------------------|
+| Mean Loss (Gross)                | ₹5.98 Cr    | MLE-calibrated lognormal        |
+| VaR 95%                          | ₹6.81 Cr    | 1-in-20 year loss               |
+| VaR 99%                          | ₹7.19 Cr    | 1-in-100 year loss              |
+| VaR 99.5% (Solvency II basis)    | ₹7.34 Cr    | 1-in-200 year loss              |
+| Expected Shortfall 99%           | ₹7.41 Cr    | Mean of tail beyond VaR 99%     |
+| Technical Insolvency Probability | 0.01%       | Losses > net premiums + capital |
+| Net VaR 99% (post XL)            | ₹6.32 Cr    | After XL reinsurance recovery   |
+| Net VaR 99.5% (post XL)          | ₹6.43 Cr    | After XL reinsurance recovery   |
 
 ### Capital Adequacy (Python Stochastic Model)
 
@@ -268,6 +269,7 @@ The following are known simplifications that would be addressed in a production 
 - **IBNR estimates** are point estimates without confidence intervals
 - **No multi-year projection** or claims inflation loading
 - The **chain-ladder tail factor** (1.02) is a simplifying assumption, not benchmarked to external data
+- **Ruin probability** is defined as technical insolvency (aggregate losses exceeding net premium resources plus available capital), rather than simple underwriting loss probability
 
 ---
 
