@@ -76,9 +76,9 @@ exploratory goodness-of-fit diagnostic, not formal out-of-sample validation.
 
 | Method                             | IBNR Reserve |
 |------------------------------------|--------------|
-| Chain-Ladder                       | ₹10.13 Cr    |
-| Bornhuetter-Ferguson               | ₹4.26 Cr     |
-| Credibility-Weighted (blended)     | ₹7.19 Cr     |
+| Chain-Ladder                       | ₹1.86 Cr    |
+| Bornhuetter-Ferguson               | ₹2.58 Cr     |
+| Credibility-Weighted (blended)     | ₹2.01 Cr     |
 
 Credibility weights use **development maturity** (percent reported) as the CL weight
 and percent unreported as the BF weight — standard actuarial blending practice.

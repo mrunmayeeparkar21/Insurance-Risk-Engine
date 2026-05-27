@@ -92,9 +92,9 @@ difference between Excel and Python capital metrics.
 
 | Method                          | IBNR Estimate |
 |---------------------------------|---------------|
-| Chain-Ladder                    | ₹10.13 Cr     |
-| Bornhuetter-Ferguson            | ₹4.26 Cr      |
-| Credibility-Weighted (blended)  | ₹7.19 Cr      |
+| Chain-Ladder                    | ₹1.86 Cr     |
+| Bornhuetter-Ferguson            | ₹2.58 Cr      |
+| Credibility-Weighted (blended)  | ₹2.01 Cr      |
 
 ---
 
