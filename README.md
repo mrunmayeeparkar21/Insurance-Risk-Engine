@@ -141,8 +141,8 @@ Recovery per claim = MAX(0, MIN(severity − ₹5,00,000, ₹45,00,000))
 ```
 
 **MLE Parameter Estimation** — frequency (Poisson) and severity (lognormal) fitted
-directly from the SQLite database using `scipy.stats`. KS goodness-of-fit test
-conducted as an in-sample diagnostic (p = 0.37).
+directly from the SQLite database using `scipy.stats`. KS goodness-of-fit test is presented as an exploratory in-sample diagnostic only.
+Because the synthetic claims data were generated from a lognormal family, this is not treated as independent model validation. In production, out-of-sample validation or distribution comparison (e.g. Pareto / Weibull / Burr via AIC/BIC) would be required.
 
 **IBNR Reserving** — Dynamic chain-ladder with volume-weighted age-to-age factors
 across 5 underwriting years (2019–2023), blended with Bornhuetter-Ferguson using

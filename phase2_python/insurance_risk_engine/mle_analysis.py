@@ -10,13 +10,16 @@ def run_mle_analysis(db_path):
 
     with sqlite3.connect(db_path) as conn:
         claims_df = pd.read_sql("SELECT gross_loss FROM claims", conn)
-        exposure_df = pd.read_sql("""SELECT COUNT(*) as n FROM policies WHERE status != 'Cancelled'""", conn)
+        exposure_df = pd.read_sql("""SELECT SUM(earned_premium * 1.0 / annual_premium) AS exposure_years 
+        FROM policies
+        WHERE status != 'Cancelled'
+        AND annual_premium > 0""", conn)
 
     gross_losses = claims_df["gross_loss"].values
     n_claims = len(gross_losses)
-    n_exposed = exposure_df["n"].iloc[0]
+    n_exposed = exposure_df["exposure_years"].iloc[0]
 
-    # ───────────── Frequency ─────────────
+    # ───────────── # Frequency (claims per exposure-year) ─────────────
     lambda_mle = n_claims / n_exposed
     lambda_se = np.sqrt(lambda_mle / n_exposed)
     ci_low = lambda_mle - 1.96 * lambda_se
