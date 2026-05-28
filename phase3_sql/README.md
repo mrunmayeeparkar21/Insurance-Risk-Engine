@@ -132,6 +132,12 @@ Eight tests run on every database build:
 
 ---
 
+## Basic Reconciliation Note
+
+Historical underwriting-year loss ratios in the SQL/Power BI dataset are calculated on an earned-premium basis across multiple accident and underwriting years, while the Phase 1 and Phase 2 actuarial models use a simplified prospective pricing assumption of 60% loss ratio on gross written premium. The figures are therefore not directly comparable and are intended for different analytical purposes (historical portfolio analysis vs forward-looking risk modelling).
+
+---
+
 ## How to Run
 
 ```bash
