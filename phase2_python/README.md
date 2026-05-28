@@ -72,6 +72,13 @@ This phase supersedes the simplified Excel simulation by introducing:
 The KS test uses fitted parameters on the same sample and is treated as an
 exploratory goodness-of-fit diagnostic, not formal out-of-sample validation.
 
+### Severity CV Reconciliation
+
+Severity CV Reconciliation Note
+The synthetic claims generator was parameterised using a target severity CV of 1.5 under a lognormal distribution. After simulation, aggregate losses were rescaled to preserve the portfolio mean severity target (₹1,20,000).
+Because the rescaling factor depends on the realised sample mean, the generated sample exhibits a lower realised CV (~1.19) when parameters are re-estimated from the simulated dataset. This is a data-generation artefact rather than evidence that the underlying population assumption differs from the model parameter.
+The stochastic risk model therefore continues to use the intended population CV assumption of 1.5 for tail-risk and capital modelling purposes.
+
 ### IBNR Reserving
 
 | Method                             | IBNR Reserve |

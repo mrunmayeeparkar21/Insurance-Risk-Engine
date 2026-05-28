@@ -288,6 +288,8 @@ The following are known simplifications that would be addressed in a production 
 - The **chain-ladder tail factor** (1.02) is a simplifying assumption, not benchmarked to external data
 - **Ruin probability** is defined as technical insolvency (aggregate losses exceeding net premium resources plus available capital), rather than simple underwriting loss probability
 - The Excel simulation defines ruin as the probability aggregate annual losses exceed gross written premium (₹10 Cr). The Phase 2 Python model instead measures technical insolvency (losses exceeding net premium resources plus available capital). The two metrics therefore use different solvency thresholds and are not directly comparable.
+- The synthetic database was generated using a target severity CV of 1.5.
+The lower realised sample CV (~1.19) recovered through MLE is primarily a data-generation artefact caused by post-simulation mean rescaling, rather than a change in the underlying population assumption.
 
 
 ---
