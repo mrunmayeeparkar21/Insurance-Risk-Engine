@@ -116,6 +116,15 @@ This divergence is a primary finding of the project: the simplified Excel model
 materially understates tail risk and leads to an overstatement of capital adequacy.
 The Python stochastic result is the more credible figure for risk management purposes.
 
+### Why Excel and Python Produce Different SCR Results
+
+The Excel simulation models stochastic claim frequency but applies a deterministic
+average claim severity (₹1,20,000 per claim). Aggregate annual loss is therefore
+approximated as:
+
+```text
+Annual Loss = Simulated Claim Count × Mean Severity
+
 ---
 
 ## Phase Summaries

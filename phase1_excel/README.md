@@ -97,6 +97,11 @@ flagged on the Calculations sheet.
 Capital Cost assumes a simplified 10% charge on available capital held
 against underwriting risk (₹2 Cr × 10% = ₹20 lakh). This is an illustrative
 management pricing load, not a regulatory cost-of-capital calibration.
+The Excel simulation models stochastic claim frequency but applies deterministic
+mean claim severity, materially understating tail risk and SCR relative to the
+Phase 2 Python stochastic model. The Excel workbook should therefore be interpreted
+primarily as a deterministic pricing framework rather than a production-grade
+capital model.
 
 ---
 
