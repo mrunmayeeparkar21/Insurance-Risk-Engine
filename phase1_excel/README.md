@@ -99,18 +99,10 @@ Solvency Ratio = Available Capital / TCR = ₹2.00 Cr / ₹0.84 Cr = 2.39×
 4. **RI Cost Ratio** — 5%→11% range produces a ₹0.6 Cr swing
 
 ### Important Limitation
-At mean severity ₹1,20,000, the XL treaty attachment point (₹5,00,000) is never
-triggered under base case assumptions. The XL treaty provides **no protection** for
-attritional claims — it is designed for large individual losses. This is explicitly
-flagged on the Calculations sheet. 
-Capital Cost assumes a simplified 10% charge on available capital held
-against underwriting risk (₹2 Cr × 10% = ₹20 lakh). This is an illustrative
-management pricing load, not a regulatory cost-of-capital calibration.
-The Excel simulation models stochastic claim frequency but applies deterministic
-mean claim severity, materially understating tail risk and SCR relative to the
-Phase 2 Python stochastic model. The Excel workbook should therefore be interpreted
-primarily as a deterministic pricing framework rather than a production-grade
-capital model.
+- At mean severity ₹1,20,000, the XL treaty attachment point (₹5,00,000) is never triggered under base case assumptions. The XL treaty provides **no protection** for attritional claims — it is designed for large individual losses. This is explicitly flagged on the Calculations sheet. 
+- Capital Cost assumes a simplified 10% charge on available capital held against underwriting risk (₹2 Cr × 10% = ₹20 lakh). This is an illustrative management pricing load, not a regulatory cost-of-capital calibration.
+- The Excel simulation models stochastic claim frequency but applies deterministic mean claim severity, materially understating tail risk and SCR relative to the Phase 2 Python stochastic model. The Excel workbook should therefore be interpreted primarily as a deterministic pricing framework rather than a production-grade capital model.
+- The illustrative XL treaty is intentionally conservative relative to the portfolio's current attritional severity profile. Under base-case assumptions, average claim severity remains well below the ₹5 lakh attachment point, producing minimal expected recoveries. This is explicitly highlighted in the workbook as evidence that the current retention structure may be economically inefficient and should be reviewed.
 
 ---
 

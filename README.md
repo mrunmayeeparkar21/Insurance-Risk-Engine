@@ -80,6 +80,17 @@ difference between Excel and Python capital metrics.
 | Solvency Ratio              | 1.22×    | ≥ 1.5×    | ⚠ Below target         |
 | RORC                        | 13.3%    | ≥ 10%     | ✓ Adequate             |
 
+### Premium Adequacy Reconciliation
+
+| Metric                    | Approx. Value | Interpretation                                  |
+|---------------------------|---------------|-------------------------------------------------|
+| Breakeven Premium         | ₹96.8 lakh    | Premium required for zero underwriting profit   |
+| Pricing Adequacy Premium  | ₹101.8 lakh   | Includes risk margin and capital cost           |
+| Legacy Management Figure  | ₹104.8 lakh   | Superseded historical assumption (removed)      |
+
+The project distinguishes between technical breakeven pricing and
+risk-adjusted economic pricing including capital costs.
+
 ### MLE Parameter Calibration
 
 | Parameter               | MLE Estimate | Model Prior | Deviation |

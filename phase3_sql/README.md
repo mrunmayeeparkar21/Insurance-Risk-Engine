@@ -134,8 +134,9 @@ Eight tests run on every database build:
 
 ## Basic Reconciliation Note
 
-Historical underwriting-year loss ratios in the SQL/Power BI dataset are calculated on an earned-premium basis across multiple accident and underwriting years, while the Phase 1 and Phase 2 actuarial models use a simplified prospective pricing assumption of 60% loss ratio on gross written premium. The figures are therefore not directly comparable and are intended for different analytical purposes (historical portfolio analysis vs forward-looking risk modelling).
-Simulated claim severities are rescaled post-generation to preserve the target portfolio mean severity. This introduces mild compression in realised sample CV estimates recovered through MLE.
+- Historical underwriting-year loss ratios in the SQL/Power BI dataset are calculated on an earned-premium basis across multiple accident and underwriting years, while the Phase 1 and Phase 2 actuarial models use a simplified prospective pricing assumption of 60% loss ratio on gross written premium. The figures are therefore not directly comparable and are intended for different analytical purposes (historical portfolio analysis vs forward-looking risk modelling).
+- Simulated claim severities are rescaled post-generation to preserve the target portfolio mean severity. This introduces mild compression in realised sample CV estimates recovered through MLE.
+- SQL portfolio loss ratios are calculated using earned premium across historical underwriting years, while the pricing model applies a prospective gross written premium assumption. The SQL layer is therefore intended for historical portfolio diagnostics and parameter exploration rather than direct one-to-one validation of the deterministic pricing ratio.
 
 ---
 
