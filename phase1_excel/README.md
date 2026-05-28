@@ -66,6 +66,10 @@ sampling, which is why capital metrics differ between the two phases.
 Claim Count  ~  Normal(µ = 500, σ = √500 ≈ 22.4)
 Simulated Loss = Claim Count × ₹1,20,000 (deterministic severity)
 ```
+The Excel simulation defines ruin as the probability aggregate annual losses exceed
+gross written premium (₹10 Cr). The Phase 2 Python model instead measures technical
+insolvency (losses exceeding net premium resources plus available capital). The two
+metrics therefore use different solvency thresholds and are not directly comparable.
 
 ### Pricing Adequacy
 Required premium built up from first principles:
