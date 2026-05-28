@@ -118,12 +118,18 @@ The Python stochastic result is the more credible figure for risk management pur
 
 ### Why Excel and Python Produce Different SCR Results
 
-The Excel simulation models stochastic claim frequency but applies a deterministic
-average claim severity (₹1,20,000 per claim). Aggregate annual loss is therefore
-approximated as:
+The Excel simulation models stochastic claim frequency but applies deterministic
+mean claim severity, materially understating tail risk and SCR. The Python model
+implements the full Collective Risk Model (Poisson frequency + Lognormal severity),
+capturing both frequency and severity volatility. Python SCR should therefore be
+treated as the actuarially appropriate basis for solvency assessment and capital planning.
 
-```text
-Annual Loss = Simulated Claim Count × Mean Severity
+### Stress Scenario Assumptions
+
+The Power BI stress scenario applies both adverse underwriting assumptions and a
+severity-volatility shock, increasing severity CV from 1.5 to 2.0. This reflects
+the actuarial observation that stress periods often exhibit wider claim severity
+dispersion and heavier tail behaviour.
 
 ---
 
