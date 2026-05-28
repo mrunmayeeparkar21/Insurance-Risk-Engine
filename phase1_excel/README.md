@@ -70,6 +70,11 @@ The Excel simulation defines ruin as the probability aggregate annual losses exc
 gross written premium (₹10 Cr). The Phase 2 Python model instead measures technical
 insolvency (losses exceeding net premium resources plus available capital). The two
 metrics therefore use different solvency thresholds and are not directly comparable.
+The Excel simulation uses 5,000 iterations for computational practicality within
+Excel. As a result, extreme tail metrics such as VaR 99.5% are subject to materially
+higher Monte Carlo sampling uncertainty than the 100,000-scenario Python model and
+should be interpreted as approximate directional estimates rather than precise
+economic capital figures.
 
 ### Pricing Adequacy
 Required premium built up from first principles:
